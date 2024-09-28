@@ -59,7 +59,7 @@ jobs:
     needs: build_and_deploy
     runs-on: ubuntu-latest
     container:
-      image: mcr.microsoft.com/playwright:v1.46.1-jammy
+      image: mcr.microsoft.com/playwright:v1.47.2-jammy
     steps:
       - uses: actions/checkout@v4
       - name: Use Node.js 18.x

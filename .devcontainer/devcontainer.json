@@ -3,7 +3,7 @@
 {
 	"name": "Playwright with Java & Node 18",
 	// Or use a Dockerfile or Docker Compose file. More info: https://containers.dev/guide/dockerfile
-	"image": "mcr.microsoft.com/playwright:v1.46.1-jammy",
+	"image": "mcr.microsoft.com/playwright:v1.47.2-jammy",
 	"features": {
 		"ghcr.io/devcontainers/features/java:1": {},
 		"ghcr.io/devcontainers/features/node:1": {

@@ -71,7 +71,7 @@ Finally, a test exists to generate the screenshots used on the home and about pa
 
 The `.github/workflows` directory contains the GitHub Actions workflows that are run on PR & merge.
 
-`build-and-test.yml` is a reusable workflow that's run on PR as well as on merge. It lints, builds and tests the site and functions against the Firebase Emulators. The [Playwright image](https://playwright.dev/docs/ci#via-containers) `mcr.microsoft.com/playwright:v1.46.1-jammy` is used to avoid the overhead of installing browsers and dependencies on each run. Since this container doesn't have Java installed (which is required for the Firebase Emulators to run) the `actions/setup-java@v4` step is used to install Java.
+`build-and-test.yml` is a reusable workflow that's run on PR as well as on merge. It lints, builds and tests the site and functions against the Firebase Emulators. The [Playwright image](https://playwright.dev/docs/ci#via-containers) `mcr.microsoft.com/playwright:v1.47.2-jammy` is used to avoid the overhead of installing browsers and dependencies on each run. Since this container doesn't have Java installed (which is required for the Firebase Emulators to run) the `actions/setup-java@v4` step is used to install Java.
 
 `merge-1.0.x.yml` first runs the job from `build-and-test.yml`, before deploying the site to Firebase and running smoke tests against the deployed site.
 
